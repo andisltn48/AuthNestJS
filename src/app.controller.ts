@@ -11,7 +11,7 @@ export class AppController {
   //Post /login
   @Post('login')
   login(@Request() req): any {
-    return req.user;
+    return {msg: 'Berhasil login!'};
   }
 
   @UseGuards(AuthenticatedGuard)
